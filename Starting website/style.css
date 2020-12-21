@@ -1,3 +1,116 @@
+/* Corrections apportées */
+/* insertion des balises sémantiques */
+
+/* Remplacement image par texte présentation agence */
+
+.agency_presentation{
+    font-size: 1.3em;
+}
+
+.text-center{
+    font-size:1.3em;
+}
+
+/* Remplacement image par texte citation agence */
+
+.quote{
+    font-size: 1em;
+    text-align: center;
+}
+
+.author{
+    text-align: center;
+    font-size: 0.9em;
+}
+
+/* Remplacement image par texte réalisations agence */
+
+.collaboration{
+    font-size: 1em;
+    width: 50%;
+    margin: auto;
+}
+
+/* Recalibrage des images et ajout description alt et titres */
+/* Mise à l'échelle 270 en width, et centrage des agrandissements */
+
+/* Footer */
+
+footer .row{
+   display: flex;
+   justify-content: space-around;
+  
+}
+footer li{
+    list-style-type: none; 
+}
+
+footer li:nth-child(1){
+    margin-bottom: 8px;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: white;
+}
+
+footer ul{
+    margin-top: 8px;    
+}
+
+.contact{
+    margin-top: 8px;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+.contact p:nth-child(1){
+    font-size: 1.3em;
+    color: white;
+}
+
+/* Page 2 */
+
+.p2 li{
+    margin-left: -200px;
+    list-style-type: none;
+}
+
+.p2 li:hover{
+    background-color: #F3976C;
+}
+
+.form-group{
+    margin-top: 16px;
+    
+}
+
+#form_1{
+    margin-top: -80px;
+}
+
+#bloc-8{
+    margin-top: -80px;
+}
+
+#message{
+    width: 70%;
+    height: 200px;
+}
+
+@media (max-width: 767px){
+    #bloc-8{
+        margin-top: 20px;
+    }
+
+    #form_1{
+        margin-top: 10px;
+    }
+}
+
+
+
+
+
+
+/* Version reçue */
 body {
     margin: 0;
     padding: 0;
@@ -283,9 +396,7 @@ a:hover {
     padding-left: 0;
 }
 
-#bloc-1-hero h1 {
-    font-size: 32px;
-}
+
 
 .navbar {
     margin-bottom: 0;
@@ -366,7 +477,7 @@ a:hover {
     .site-navigation {
         position: absolute;
         top: 50%;
-        right: 20px;
+        right: 100px;
         transform: translate(0, -50%);
         -webkit-transform: translateY(-50%);
     }
@@ -636,7 +747,6 @@ a[data-lightbox]:hover img {
 .snapshot-lb .lightbox-caption {
     padding: 0;
     color: rgba(0, 0, 0, .5);
-    background: none;
 }
 
 h1,
@@ -645,7 +755,7 @@ h3,
 h4,
 h5,
 h6,
-p,
+
 label,
 .btn,
 a {
@@ -772,6 +882,7 @@ h4 {
 
 .bgc-atomic-tangerine {
     background-color: #F3976C;
+    
 }
 
 .tc-white {
