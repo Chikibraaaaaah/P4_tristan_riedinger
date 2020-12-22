@@ -43,17 +43,19 @@ footer .row{
 }
 footer li{
     list-style-type: none; 
+   
 }
 
 footer li:nth-child(1){
     margin-bottom: 8px;
     font-size: 1.3em;
     font-weight: bold;
-    color: white;
+
 }
 
 footer ul{
     margin-top: 8px;    
+    
 }
 
 .contact{
@@ -63,18 +65,26 @@ footer ul{
 }
 .contact p:nth-child(1){
     font-size: 1.3em;
-    color: white;
+    color: black !important;
 }
+
+.contact p{
+    font-size: 0.8em;
+    margin-top: -4px;
+}
+
+
 
 /* Page 2 */
 
 .p2 li{
     margin-left: -200px;
     list-style-type: none;
+    
 }
 
-.p2 li:hover{
-    background-color: #F3976C;
+.p2 a{
+    text-decoration: none;
 }
 
 .form-group{
@@ -95,6 +105,36 @@ footer ul{
     height: 200px;
 }
 
+h1:nth-child(1){
+    font-size: 1em;
+}
+
+h2:nth-child(1){
+    font-size: 0.9em;
+}
+
+h3:nth-child(1){
+    font-size: 0.8em;
+}
+
+h4:nth-child(1){
+    font-size: 0.9em;
+}
+
+footer a:hover{
+    background-color: yellow;
+    
+}
+
+.plus:hover{
+    background-color: yellow;
+}
+#nav-toggle{
+    display: none;
+}
+
+/* formulaire et footer page 2 tablette */
+
 @media (max-width: 767px){
     #bloc-8{
         margin-top: 20px;
@@ -103,9 +143,97 @@ footer ul{
     #form_1{
         margin-top: 10px;
     }
+
+    .img-responsive.portfolio-thumb{
+        margin: auto;
+    }
+
+    footer{
+        margin-left: -8px;
+        margin-top: 8px;
+    }
+
+    @media (max-width: 767px){
+    #bloc-8{
+        margin-top: 20px;
+    }
+
+    #form_1{
+        margin-top: 10px;
+    }
+
+    .img-responsive.portfolio-thumb{
+        margin: auto;
+    }
+
+    footer{
+        margin-left: -8px;
+        margin-top: 8px;
+    }
+
+    footer .row3{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer ul{
+        margin-top: 24px;
+        margin-left: -24px;
+    }
+
+   
+}{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer ul{
+        margin-top: 24px;
+        margin-left: -24px;
+    }
+
+   
+}
+
+@media (min-width: 732px){
+    
+
+    .img-responsive.portfolio-thumb{
+        margin: auto;
+    }
+
+    footer{
+        margin-left: -8px;
+        margin-top: 8px;
+    }
+
+    footer .row3{
+        display: flex;
+        justify-content: space-around;
+        text-align: left;
+    }
+
+    footer ul{
+        margin-top: 24px;
+        margin-left: -24px;
+    }
+
+    .contact{
+        margin-top: 16px;
+    }
+
+   
 }
 
 
+
+/* Ammélioratioon accessibilité */
+
+/* Modification couleur hover */
+/* Modifs couleurs focus formulaire */
+/* Plus tard, case à cocher. Il faudra pour les contrôles spécifiques, fournir les changements d’états via les états ARIA tels que aria-checked ??
 
 
 
@@ -127,7 +255,7 @@ button {
 }
 
 a:hover {
-    text-decoration: none;
+    text-decoration: underline;
     cursor: pointer;
 }
 
@@ -213,23 +341,21 @@ a:hover {
 }
 
 .d-bloc {
-    color: rgba(255, 255, 255, .7);
+    color: black;
 }
 
-.d-bloc button:hover {
-    color: rgba(255, 255, 255, .9);
-}
+
 
 .d-bloc .icon-round,
 .d-bloc .icon-square,
 .d-bloc .icon-rounded,
 .d-bloc .icon-semi-rounded-a,
 .d-bloc .icon-semi-rounded-b {
-    border-color: rgba(255, 255, 255, .9);
+    border-color: black;
 }
 
 .d-bloc .divider-h span {
-    border-color: rgba(255, 255, 255, .2);
+    border-color: black;
 }
 
 .d-bloc .a-btn,
@@ -246,7 +372,7 @@ a:hover {
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-    color: rgba(255, 255, 255, .6);
+    color: black;
 }
 
 .d-bloc .a-btn:hover,
@@ -263,7 +389,7 @@ a:hover {
 .d-bloc h5 a:hover,
 .d-bloc h6 a:hover,
 .d-bloc p a:hover {
-    color: rgba(255, 255, 255, 1);
+    color: rgb(40, 2, 255);
 }
 
 .d-bloc .navbar-toggle .icon-bar {
@@ -271,18 +397,12 @@ a:hover {
 }
 
 .d-bloc .btn-wire,
-.d-bloc .btn-wire:hover {
-    color: rgba(255, 255, 255, 1);
-    border-color: rgba(255, 255, 255, 1);
-}
+
 
 .d-bloc .panel {
     color: rgba(0, 0, 0, .5);
 }
 
-.d-bloc .panel button:hover {
-    color: rgba(0, 0, 0, .7);
-}
 
 .d-bloc .panel icon {
     border-color: rgba(0, 0, 0, .7);
@@ -296,15 +416,6 @@ a:hover {
     color: rgba(0, 0, 0, .6);
 }
 
-.d-bloc .panel .a-btn:hover {
-    color: rgba(0, 0, 0, 1);
-}
-
-.d-bloc .panel .btn-wire,
-.d-bloc .panel .btn-wire:hover {
-    color: rgba(0, 0, 0, .7);
-    border-color: rgba(0, 0, 0, .3);
-}
 
 .d-bloc .panel,
 .l-bloc {
@@ -433,11 +544,7 @@ a:hover {
     z-index: 1;
 }
 
-.nav > li {
-    float: left;
-    margin-top: 4px;
-    font-size: 16px;
-}
+
 
 .navbar-nav .open .dropdown-menu > li > a {
     text-align: inherit;
@@ -445,7 +552,8 @@ a:hover {
 
 .nav > li a:hover,
 .nav > li a:focus {
-    background: transparent;
+    background: yellow;
+    text-decoration: underline;
 }
 
 .navbar-toggle {
@@ -453,9 +561,7 @@ a:hover {
     border: 0px;
 }
 
-.navbar-toggle:hover {
-    background: transparent!important;
-}
+
 
 .navbar-toggle .icon-bar {
     background-color: rgba(0, 0, 0, .5);
@@ -483,7 +589,7 @@ a:hover {
     }
     .nav > li .dropdown-menu a,
     .nav > li .dropdown-menu a:hover {
-        color: #484848;
+        color: yellow;
     }
     .nav-invert .site-navigation {
         left: 0;
@@ -567,8 +673,8 @@ nav .caret {
 .btn-d,
 .btn-d:hover,
 .btn-d:focus {
-    color: #FFF;
-    background: rgba(0, 0, 0, .3);
+    color:black;
+    background: yellow;
 }
 
 button {
@@ -619,6 +725,11 @@ button {
 .form-control {
     border-color: rgba(0, 0, 0, .1);
     box-shadow: none;
+    margin-top: -20px;
+}
+
+.form-control:focus{
+    background-color: rgb(231, 160, 152);
 }
 
 .scrollToTop {
@@ -655,8 +766,8 @@ a[data-lightbox]:hover::before {
     height: 50px;
     margin-left: -25px;
     border-radius: 50%;
-    background: rgba(0, 0, 0, .6);
-    color: #FFF;
+    background: green;
+    color: black;
     font-weight: 100;
     z-index: 1;
     position: absolute;
@@ -666,9 +777,8 @@ a[data-lightbox]:hover::before {
 }
 
 a[data-lightbox]:hover img {
-    opacity: 0.6;
-    -webkit-animation-fill-mode: none;
-    animation-fill-mode: none;
+    opacity:0.6;
+  
 }
 
 #lightbox-modal {
@@ -689,16 +799,17 @@ a[data-lightbox]:hover img {
 
 .lightbox-caption {
     padding: 20px;
-    color: #FFF;
-    background: rgba(0, 0, 0, .5);
+    color: black;
     position: absolute;
     left: 15px;
     right: 15px;
     bottom: 5px;
+    text-align: center;
+    font-size: 1em;
 }
 
 .close-lightbox {
-    color: #FFF;
+    color: black;
     font-size: 30px;
     position: absolute;
     top: 20px;
@@ -714,8 +825,9 @@ a[data-lightbox]:hover img {
 .close-lightbox:hover,
 .next-lightbox:hover,
 .prev-lightbox:hover {
-    opacity: 1.0;
-    color: #FFF;
+    
+    color:blue !important;
+    background-color: red;
 }
 
 .next-lightbox,
@@ -760,9 +872,11 @@ label,
 .btn,
 a {
     font-family: "helvetica";
-    font-weight: 400;
-    color: #575757!important;
+    font-weight: bold;
+    color: black !important;
 }
+
+
 
 .container {
     max-width: 1000px;
@@ -802,7 +916,7 @@ p {
 
 .cta-hero {
     margin-top: 22px;
-    color: #FFFFFF!important;
+    color:black!important;
     text-transform: uppercase;
     padding: 12px 28px 12px 28px;
     font-size: 16px;
@@ -846,7 +960,7 @@ h4 {
 }
 
 .white {
-    color: #FFFFFF!important;
+    color: black !important;
 }
 
 .portfolio-thumb {
@@ -886,33 +1000,31 @@ h4 {
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: pink !important;
 }
 
 .btn-atomic-tangerine {
     background: #F3976C;
-    color: #FFFFFF!important;
+    color: black !important;
 }
 
 .btn-atomic-tangerine:hover {
-    background: #c27956!important;
-    color: #FFFFFF!important;
+    background: red !important;
+    color: white !important;
 }
 
 .ltc-white {
-    color: #FFFFFF!important;
+    color: black !important;
 }
 
-.ltc-white:hover {
-    color: #cccccc!important;
-}
+
 
 .ltc-atomic-tangerine {
     color: #F3976C!important;
 }
 
 .ltc-atomic-tangerine:hover {
-    color: #c27956!important;
+    color: yellow!important;
 }
 
 .icon-dark-slate-blue {
@@ -1036,14 +1148,14 @@ h4 {
     }
     .nav > li {
         margin-top: 0;
-        border-bottom: 1px solid rgba(0, 0, 0, .1);
-        background: rgba(0, 0, 0, .05);
+        
+        
         text-align: left;
         padding-left: 15px;
         width: 100%;
     }
     .nav > li:hover {
-        background: rgba(0, 0, 0, .08);
+        background: yellow;
     }
     .dropdown .dropdown a .caret {
         float: none;
