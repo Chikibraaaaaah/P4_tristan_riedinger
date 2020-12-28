@@ -1,250 +1,100 @@
-/* Corrections apportées */
-/* insertion des balises sémantiques */
+/* Remplacement photo liée activite par p */
 
-/* Remplacement image par texte présentation agence */
+.activite
+{
+    font-size: 1.5em;
+    text-align: center;
+}
 
-.agency_presentation{
+/* Agrandissement police activités */
+
+.col-sm-4 p{
     font-size: 1.3em;
 }
 
-.text-center{
-    font-size:1.3em;
+
+.citation{
+    font-size: 1em;
 }
 
-/* Remplacement image par texte citation agence */
 
-.quote{
-    font-size: 1em;
-    text-align: center;
+.ita{
+    font-style: italic;
+    font-weight: bold;
 }
 
 .author{
+    font-size: 0.8em;
+}
+
+.rea{
+     
     text-align: center;
-    font-size: 0.9em;
-}
-
-/* Remplacement image par texte réalisations agence */
-
-.collaboration{
-    font-size: 1em;
-    width: 50%;
-    margin: auto;
-}
-
-/* Recalibrage des images et ajout description alt et titres */
-/* Mise à l'échelle 270 en width, et centrage des agrandissements */
-
-/* Footer */
-
-footer .row{
-   display: flex;
-   justify-content: space-around;
-  
-}
-footer li{
-    list-style-type: none; 
-   
-}
-
-footer li:nth-child(1){
-    margin-bottom: 8px;
     font-size: 1.3em;
-    font-weight: bold;
-
-}
-
-footer ul{
-    margin-top: 8px;    
-    
 }
 
 .contact{
-    margin-top: 8px;
-    font-size: 1.3em;
-    font-weight: bold;
-}
-.contact p:nth-child(1){
-    font-size: 1.3em;
-    color: black !important;
+    float: right;
 }
 
-.contact p{
-    font-size: 0.8em;
-    margin-top: -4px;
-}
-
-
-
-/* Page 2 */
-
-.p2 li{
-    margin-left: -200px;
+.contact li{
     list-style-type: none;
-    
 }
 
-.p2 a{
-    text-decoration: none;
+.accueil{
+    margin-left: -500px;
+    list-style-type: none;
+  
 }
 
-.form-group{
-    margin-top: 16px;
-    
-}
 
-#form_1{
-    margin-top: -80px;
-}
-
-#bloc-8{
-    margin-top: -80px;
-}
-
-#message{
-    width: 70%;
-    height: 200px;
-}
-
-h1:nth-child(1){
-    font-size: 1em;
-}
-
-h2:nth-child(1){
-    font-size: 0.9em;
-}
-
-h3:nth-child(1){
-    font-size: 0.8em;
-}
-
-h4:nth-child(1){
-    font-size: 0.9em;
-}
-
-footer a:hover{
-    background-color: yellow;
-    
-}
-
-.plus:hover{
-    background-color: yellow;
-}
 #nav-toggle{
     display: none;
 }
 
 
 
-/* formulaire et footer page 2 tablette */
-
-@media (max-width: 767px){
-    #bloc-8{
-        margin-top: 20px;
-    }
-
-    #form_1{
-        margin-top: 10px;
-    }
-
-    .img-responsive.portfolio-thumb{
-        margin: auto;
-    }
-
-    footer{
-        margin-left: -8px;
-        margin-top: 8px;
-    }
-
-    @media (max-width: 767px){
-    #bloc-8{
-        margin-top: 20px;
-    }
-
-    #form_1{
-        margin-top: 10px;
-    }
-
-    .img-responsive.portfolio-thumb{
-        margin: auto;
-    }
-
-    footer{
-        margin-left: -8px;
-        margin-top: 8px;
-    }
-
-    footer .row3{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
-
-    footer ul{
-        margin-top: 24px;
-        margin-left: -24px;
-    }
-
-   
-}{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
-
-    footer ul{
-        margin-top: 24px;
-        margin-left: -24px;
-    }
-
-   
+.form-group{
+    margin-top:20px ;
 }
 
-@media (min-width: 732px){
+.form-control:focus{
+    background-color: rgb(231, 160, 152);
+}
 
-    .form .bloc.bgc-white.l-bloc{
-        margin-left: 40px;
-    }
-    
+#bloc-6{
+    z-index: 1;
+}
 
-    .img-responsive.portfolio-thumb{
-        margin: auto;
-    }
-
-    footer{
-        margin-left: -8px;
-        margin-top: 8px;
-    }
-
-    footer .row3{
-        display: flex;
-        justify-content: space-around;
-        text-align: left;
-    }
-
-    footer ul{
-        margin-top: 24px;
-        margin-left: -24px;
-    }
-
-    .contact{
-        margin-top: 16px;
-    }
-
-   
+#bloc-7{
+    margin-top: -80px;
+    z-index: 0;
 }
 
 
 
-/* Ammélioratioon accessibilité */
-
-/* Modification couleur hover */
-/* Modifs couleurs focus formulaire */
-/* Plus tard, case à cocher. Il faudra pour les contrôles spécifiques, fournir les changements d’états via les états ARIA tels que aria-checked ??
 
 
 
 
-/* Version reçue */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 body {
     margin: 0;
     padding: 0;
@@ -261,7 +111,7 @@ button {
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration: none;
     cursor: pointer;
 }
 
@@ -278,6 +128,7 @@ a:hover {
     width: 100%;
     clear: both;
     background: 50% 50% no-repeat;
+    padding: 0 50px;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -346,21 +197,23 @@ a:hover {
 }
 
 .d-bloc {
-    color: black;
+    color: rgba(255, 255, 255, .7);
 }
 
-
+.d-bloc button:hover {
+    color: rgba(255, 255, 255, .9);
+}
 
 .d-bloc .icon-round,
 .d-bloc .icon-square,
 .d-bloc .icon-rounded,
 .d-bloc .icon-semi-rounded-a,
 .d-bloc .icon-semi-rounded-b {
-    border-color: black;
+    border-color: rgba(255, 255, 255, .9);
 }
 
 .d-bloc .divider-h span {
-    border-color: black;
+    border-color: rgba(255, 255, 255, .2);
 }
 
 .d-bloc .a-btn,
@@ -377,7 +230,7 @@ a:hover {
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-    color: black;
+    color: rgba(255, 255, 255, .6);
 }
 
 .d-bloc .a-btn:hover,
@@ -394,7 +247,7 @@ a:hover {
 .d-bloc h5 a:hover,
 .d-bloc h6 a:hover,
 .d-bloc p a:hover {
-    color: rgb(40, 2, 255);
+    color: rgba(255, 255, 255, 1);
 }
 
 .d-bloc .navbar-toggle .icon-bar {
@@ -402,12 +255,18 @@ a:hover {
 }
 
 .d-bloc .btn-wire,
-
+.d-bloc .btn-wire:hover {
+    color: rgba(255, 255, 255, 1);
+    border-color: rgba(255, 255, 255, 1);
+}
 
 .d-bloc .panel {
     color: rgba(0, 0, 0, .5);
 }
 
+.d-bloc .panel button:hover {
+    color: rgba(0, 0, 0, .7);
+}
 
 .d-bloc .panel icon {
     border-color: rgba(0, 0, 0, .7);
@@ -421,6 +280,15 @@ a:hover {
     color: rgba(0, 0, 0, .6);
 }
 
+.d-bloc .panel .a-btn:hover {
+    color: rgba(0, 0, 0, 1);
+}
+
+.d-bloc .panel .btn-wire,
+.d-bloc .panel .btn-wire:hover {
+    color: rgba(0, 0, 0, .7);
+    border-color: rgba(0, 0, 0, .3);
+}
 
 .d-bloc .panel,
 .l-bloc {
@@ -512,7 +380,9 @@ a:hover {
     padding-left: 0;
 }
 
-
+#bloc-1-hero h1 {
+    font-size: 32px;
+}
 
 .navbar {
     margin-bottom: 0;
@@ -549,7 +419,11 @@ a:hover {
     z-index: 1;
 }
 
-
+.nav > li {
+    float: left;
+    margin-top: 4px;
+    font-size: 16px;
+}
 
 .navbar-nav .open .dropdown-menu > li > a {
     text-align: inherit;
@@ -557,8 +431,8 @@ a:hover {
 
 .nav > li a:hover,
 .nav > li a:focus {
-    background: yellow;
-    text-decoration: underline;
+        background: yellow;
+        text-decoration: underline;
 }
 
 .navbar-toggle {
@@ -566,7 +440,9 @@ a:hover {
     border: 0px;
 }
 
-
+.navbar-toggle:hover {
+    background: transparent!important;
+}
 
 .navbar-toggle .icon-bar {
     background-color: rgba(0, 0, 0, .5);
@@ -588,13 +464,13 @@ a:hover {
     .site-navigation {
         position: absolute;
         top: 50%;
-        right: 100px;
+        right: 20px;
         transform: translate(0, -50%);
         -webkit-transform: translateY(-50%);
     }
     .nav > li .dropdown-menu a,
     .nav > li .dropdown-menu a:hover {
-        color: yellow;
+        color: #484848;
     }
     .nav-invert .site-navigation {
         left: 0;
@@ -678,8 +554,8 @@ nav .caret {
 .btn-d,
 .btn-d:hover,
 .btn-d:focus {
-    color:black;
-    background: yellow;
+    color: #FFF;
+    background: rgba(0, 0, 0, .3);
 }
 
 button {
@@ -730,11 +606,6 @@ button {
 .form-control {
     border-color: rgba(0, 0, 0, .1);
     box-shadow: none;
-    margin-top: -20px;
-}
-
-.form-control:focus{
-    background-color: rgb(231, 160, 152);
 }
 
 .scrollToTop {
@@ -771,8 +642,8 @@ a[data-lightbox]:hover::before {
     height: 50px;
     margin-left: -25px;
     border-radius: 50%;
-    background: green;
-    color: black;
+    background: rgba(0, 0, 0, .6);
+    color: #FFF;
     font-weight: 100;
     z-index: 1;
     position: absolute;
@@ -782,8 +653,9 @@ a[data-lightbox]:hover::before {
 }
 
 a[data-lightbox]:hover img {
-    opacity:0.6;
-  
+    opacity: 0.6;
+    -webkit-animation-fill-mode: none;
+    animation-fill-mode: none;
 }
 
 #lightbox-modal {
@@ -804,17 +676,16 @@ a[data-lightbox]:hover img {
 
 .lightbox-caption {
     padding: 20px;
-    color: black;
+    color: #FFF;
+    background: rgba(0, 0, 0, .5);
     position: absolute;
     left: 15px;
     right: 15px;
     bottom: 5px;
-    text-align: center;
-    font-size: 1em;
 }
 
 .close-lightbox {
-    color: black;
+    color: #FFF;
     font-size: 30px;
     position: absolute;
     top: 20px;
@@ -830,9 +701,8 @@ a[data-lightbox]:hover img {
 .close-lightbox:hover,
 .next-lightbox:hover,
 .prev-lightbox:hover {
-    
-    color:blue !important;
-    background-color: red;
+    opacity: 1.0;
+    color: #FFF;
 }
 
 .next-lightbox,
@@ -864,6 +734,7 @@ a[data-lightbox]:hover img {
 .snapshot-lb .lightbox-caption {
     padding: 0;
     color: rgba(0, 0, 0, .5);
+    background: none;
 }
 
 h1,
@@ -872,16 +743,14 @@ h3,
 h4,
 h5,
 h6,
-
+p,
 label,
 .btn,
 a {
     font-family: "helvetica";
-    font-weight: bold;
-    color: black !important;
+    font-weight: 400;
+    color: #575757!important;
 }
-
-
 
 .container {
     max-width: 1000px;
@@ -921,7 +790,7 @@ p {
 
 .cta-hero {
     margin-top: 22px;
-    color:black!important;
+    color: #FFFFFF!important;
     text-transform: uppercase;
     padding: 12px 28px 12px 28px;
     font-size: 16px;
@@ -965,7 +834,7 @@ h4 {
 }
 
 .white {
-    color: black !important;
+    color: #FFFFFF!important;
 }
 
 .portfolio-thumb {
@@ -1001,35 +870,36 @@ h4 {
 
 .bgc-atomic-tangerine {
     background-color: #F3976C;
-    
 }
 
 .tc-white {
-    color: pink !important;
+    color: #F3976C!important;
 }
 
 .btn-atomic-tangerine {
     background: #F3976C;
-    color: black !important;
+    color: #FFFFFF!important;
 }
 
 .btn-atomic-tangerine:hover {
-    background: red !important;
-    color: white !important;
+    background: #c27956!important;
+    color: #FFFFFF!important;
 }
 
 .ltc-white {
-    color: black !important;
+    color: #FFFFFF!important;
 }
 
-
+.ltc-white:hover {
+    color: #cccccc!important;
+}
 
 .ltc-atomic-tangerine {
     color: #F3976C!important;
 }
 
 .ltc-atomic-tangerine:hover {
-    color: yellow!important;
+    color: #c27956!important;
 }
 
 .icon-dark-slate-blue {
@@ -1054,12 +924,10 @@ h4 {
 }
 
 @media (max-width: 1024px) {
-   
-    .navbar-header{
-        margin-left: 20px;
+    .bloc {
+        padding-left: 20px;
+        padding-right: 20px;
     }
-
-
     .bloc.full-width-bloc,
     .bloc-tile-2.full-width-bloc .container,
     .bloc-tile-3.full-width-bloc .container,
@@ -1155,14 +1023,14 @@ h4 {
     }
     .nav > li {
         margin-top: 0;
-        
-        
+        border-bottom: 1px solid rgba(0, 0, 0, .1);
+        background: rgba(0, 0, 0, .05);
         text-align: left;
         padding-left: 15px;
         width: 100%;
     }
     .nav > li:hover {
-        background: yellow;
+        background: rgba(0, 0, 0, .08);
     }
     .dropdown .dropdown a .caret {
         float: none;
