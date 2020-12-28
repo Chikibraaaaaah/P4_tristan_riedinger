@@ -48,9 +48,7 @@
 }
 
 
-#nav-toggle{
-    display: none;
-}
+
 
 
 
@@ -70,7 +68,6 @@
     margin-top: -80px;
     z-index: 0;
 }
-
 
 
 
@@ -381,7 +378,7 @@ a:hover {
 }
 
 #bloc-1-hero h1 {
-    font-size: 32px;
+    font-size: 2em;
 }
 
 .navbar {
@@ -392,7 +389,7 @@ a:hover {
 .navbar-brand {
     height: auto;
     padding: 3px 15px;
-    font-size: 25px;
+    font-size: 1em;
     font-weight: normal;
     font-weight: 600;
     line-height: 44px;
@@ -422,7 +419,7 @@ a:hover {
 .nav > li {
     float: left;
     margin-top: 4px;
-    font-size: 16px;
+    font-size: 2em;
 }
 
 .navbar-nav .open .dropdown-menu > li > a {
@@ -988,10 +985,48 @@ h4 {
 }
 
 @media (max-width: 767px) {
+
+    figure img{
+        margin: auto;
+    }
+    
+    .activite{
+        width: 90%;
+        margin: auto;
+    }
+
+    .rea{
+        font-size: 1em;
+    }
+
     .page-container {
         overflow-x: hidden;
         position: relative;
     }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    footer li{
+        list-style-type: none;
+    }
+
+.partenaires{
+    margin-top: 20px;
+    
+}
+
+    .contact{
+        margin-top: 20px;
+        text-align: center;
+        margin-left: -30px;
+    }
+
     h1,
     h2,
     h3,
