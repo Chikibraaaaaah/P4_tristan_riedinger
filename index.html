@@ -11,7 +11,19 @@
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<link rel="stylesheet" type="text/css" href="./css/font-awesome.css" >
 		<link rel="stylesheet" type="text/css" href="./css/et-line.css">
+
 		
+		
+		<IfModule mod_expires.c>
+			ExpiresActive on
+			ExpiresByType image/jpg "access plus 20 days"
+			ExpiresByType image/png "access plus 20 days"
+			ExpiresByType image/gif "access plus 20 days"
+			ExpiresByType image/jpeg "access plus 20 days"
+			ExpiresByType text/css "access plus 1 week"
+			ExpiresByType application/x-javascript "access plus 1 week"
+			ExpiresByType application/javascript "access plus 1 week"
+  		</IfModule>
 		
 		<script async src="./js/jquery-2.1.0.js"></script>
 		<script async src="./js/bootstrap.js"></script>
@@ -19,7 +31,6 @@
 		<script async src="./js/jquery.touchSwipe.js" ></script>
 		<script async src="./js/gmaps.js"></script>
 
-		<Cache-Control: max-age=31536000>
 
 		<title>La Chouette Agence - Web Design Lyon</title>
 
