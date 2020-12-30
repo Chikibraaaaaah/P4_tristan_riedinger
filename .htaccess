@@ -1,4 +1,4 @@
-## contrôle du cache navigateur - Expire headers
+# contrôle du cache navigateur - Expire headers
 <IfModule mod_expires.c>
 	ExpiresActive On
 	ExpiresDefault "access plus 1 week"
