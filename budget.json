@@ -1,5 +1,9 @@
-[{"path": "/*","timings": [{"metric": "interactive","budget": 3000}, 
- {"metric": "first-meaningful-paint","budget": 1000}],   
-"resourceSizes": [{"resourceType": "script","budget": 125}, 
- {"resourceType": "total","budget": 300}],   
-"resourceCounts": [{"resourceType": "third-party","budget": 10}]}]
+{
+    "head_title":"La Chouette Agence",
+    "head_description":"La Chouette Agence est une agence de WebDesign basée à Lyon",
+    "site_h1":"La Chouette Agence  WebDesign basée à Lyon",
+    "site_description":"La Chouette Agence est une agence de WebDesign basée à Lyon. Conception et création de site web sur mesure. ",
+    "page_h2":"Web design",
+    "page_content":"La Chouette Agence est une agence de web design qui aide les entreprises à devenir attractives et visibles sur internet",
+    "footer_text":"contact@lachouetteagence.com   2 place Sathonay 69001 Lyon."
+}
