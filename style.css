@@ -1,36 +1,27 @@
 
 /* Partie refaite */
 
-
-.navbar-nav2 li{
-    margin-left: -200px;
-}
-
-.activity{
-    font-size: 1.5em;
-}
-
-footer .row{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 12px;
-}
-
-.col-sm-4 li{
-    list-style-type: none;
-}
-
-
-.fa-instagram{
-    size: 3em;
+#nav-toggle1{
+    display: none;
 }
 /* Fin de la Partie refaite */
 
 
+#bloc-7 .container{
+    margin-top: -50px;
+}
 
+#bloc-6{
+    z-index: 1;
+}
 
+.form-group{
+    margin-top: 16px;
+}
 
-
+.navbar-nav2 li{
+    margin-left: -250px;
+}
 
 
 
