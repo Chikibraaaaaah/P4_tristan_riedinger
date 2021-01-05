@@ -29,6 +29,7 @@
 .rea a:hover{
   
     background-color: white;
+    text-decoration: underline;
    
 }
 
@@ -289,7 +290,7 @@ a:hover {
 }
 
 #bloc-1-hero h1 {
-    font-size: 1.5em;
+    font-size: 3em;
     font-weight: bold;
     
 }
@@ -592,6 +593,10 @@ h4 {
 
 .white {
 	color: #0D0D0D;
+}
+
+.white:nth-child(1){
+    font-size: 2em;
 }
 
 .form-group{
